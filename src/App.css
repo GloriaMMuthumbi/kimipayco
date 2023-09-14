@@ -1,6 +1,6 @@
 .navbar-item {
   color: #009CFF;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .carousel {
@@ -72,7 +72,7 @@ p {
 
 @media screen and (min-width: 769px) {
   .outer {
-    min-width: 200px;
+    min-width: 80%;
   }
 
   .inner {
@@ -89,20 +89,86 @@ p {
   }
 
   .choose-item-outer {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    border-right: solid 1px;
+    height: 100%;
+    border-color: #cfcfcc;
   }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .hr-mobile {
     display: none;
   }
 
-  .carousel {
-    height: 10vh;
+  .choose-item-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px;
+    height: 100%;
+    border-color: #cfcfcc;
   }
 
+  .outer {
+    min-width: 45%;
+  }
+
+  .inner {
+    max-width: 175px; 
+    padding: 5%;
+  }
+
+  .number {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 1em;
+    white-space: wrap;
+  }
+
+  .lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
+  
+  .short-line {
+    width: 90vw;
+    height: 1px;
+    background-color: #009CFF;
+  }
+  
+  .left {
+    display: flex;
+    align-self: flex-end;
+  }
+  
+  .long-line {
+    width: 5vw;
+    height: 1.5px;
+    background-color: #009CFF;
+    margin-top: 6px;
+  }
+  
+  .section-title {
+    color: #009CFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 700;
+  }
+
+  .rectangle {
+    height: 30%;
+  }
 }
 
 .aboutus-container {
@@ -116,7 +182,7 @@ p {
   box-sizing: border-box;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +225,11 @@ p {
   font-weight: 700;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
 .row {
   margin-bottom: 15px;
 }
@@ -194,7 +265,7 @@ p {
 }
 
 .blue-text {
-  color: #009CFF;
+  color: #3799d4;
 }
 
 .paragraph {
@@ -206,17 +277,23 @@ p {
 
 .service {
   position: relative;
-  width: 393px;
+  width: auto;
   height: 314px;
   border-radius: 10px;
-  padding: 20px;
   align-self: center;
   margin-bottom: 20px;
 }
 
+.services {
+  display: flex;
+  width: 100%;
+}
+
 .service-name {
-  color: #c7c7c7;
+  color: #000;
   margin: 10px 10px 40px 10px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .service-img {
@@ -250,7 +327,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: solid 1px;
   height: 100%;
   border-color: #cfcfcc;
 }
@@ -261,7 +337,7 @@ p {
 }
 
 footer {
-  background: #212529;
+  background: #231f20;
 }
 
 .form-control:focus {
@@ -308,6 +384,9 @@ a:hover, a:focus {
 
 .text-white {
   text-decoration: none;
+  white-space: nowrap;
+  text-align: start;
+  text-align: left;
 }
 
 .text-white .link {
@@ -320,14 +399,8 @@ a:hover, a:focus {
   color: white;
 }
 
-.carousel {
-  overflow: hidden;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .carousel-inner {
+  position: relative;
   white-space: nowrap;
   transition: transform 1000ms;
 }
@@ -335,7 +408,9 @@ a:hover, a:focus {
 .carousel-item {
   position: relative;
   width: 100%;
-  height: 100vh; /* Set the height to match the design of the second carousel */
+  height: 100vh;
+  display: inline-block;
+  background: none; 
 }
 
 .rectangle {
@@ -361,39 +436,11 @@ a:hover, a:focus {
   transform: translateY(-50%);
   width: 90%;
   color: #ffffff;
-  text-align: left; /* Adjust text alignment to match the design of the second carousel */
-}
-
-.carousel-item-information h6 {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  color: white;
-}
-
-.carousel-caption h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 55px;
-  color: #ffffff;
-}
-
-.blue-text {
-  color: #009CFF;
+  text-align: left;
 }
 
 .white-text {
   color: white;
-}
-
-.carousel-item-description {
-  white-space: normal;
-  width: 80%;
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 2%;
 }
 
 .carousel-indicators > button {
@@ -403,11 +450,58 @@ a:hover, a:focus {
   border-radius: 50%;
   border: 10px;
   border-color: #009CFF;
+  margin-bottom: 15px;
 }
 
-.carousel-indicators .active {
-  transform: scale(1.2);
-  border-radius: 50%;
-  border: none;
+.active {
+  transform: scale(1);
   background-color: #009CFF;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5%;
+}
+
+.carousel-caption h6 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.carousel-caption h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 90%;
+  font-size: 55px;
+  font-weight: 700;
+  white-space: wrap;
+  color: #ffffff;
+  text-align: start;
+}
+
+.carousel-caption p {
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
 }

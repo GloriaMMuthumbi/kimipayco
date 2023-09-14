@@ -1,9 +1,9 @@
 const InforgraphComponent = () => {
     return ( 
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="row justify-content-between">
-                    <div class="col-md-auto infograph">
+        <div className="container-fluid">
+            <div className="row justify-content-center">
+                <div className="row justify-content-between">
+                    <div className="col-md-auto infograph">
                         <div className="outer">
                             <div className="inner">
                                 <p className="number">+100k</p>
@@ -11,7 +11,7 @@ const InforgraphComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-auto infograph">
+                    <div className="col-md-auto infograph">
                         <div className="outer">
                             <div className="inner">
                                 <p className="number">+1M</p>
@@ -19,7 +19,7 @@ const InforgraphComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-auto infograph">
+                    <div className="col-md-auto infograph">
                         <div className="outer">
                             <div className="inner">
                                 <p className="number">14</p>
@@ -27,7 +27,7 @@ const InforgraphComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-auto infograph">
+                    <div className="col-md-auto infograph">
                         <div className="outer">
                             <div className="inner">
                                 <p className="number">24/7</p>

@@ -1,7 +1,7 @@
 const WhyChooseUsComponent = () => {
     return (  
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row section">
             <div className="title">
                 <div className="lines">
                     <div className="short-line left"></div>
@@ -16,7 +16,7 @@ const WhyChooseUsComponent = () => {
                     <p className="section-intro">Why people choose us...</p>
                 </div>
             <div className="row">
-                <div class="col-sm">
+                <div className="col-sm">
                     <div className="choose-item-outer">
                         <div className="choose-item-inner">
                             <img className="icon" src="./timely-icon.svg" alt="" />
@@ -25,7 +25,7 @@ const WhyChooseUsComponent = () => {
                         <p className="more-description">Timely Services ensure your financial transactions are swift and secure, allowing you to send money and manage your finances effortlessly, backed by 24/7 customer support.</p>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
                     <div className="choose-item-outer">
                         <div className="choose-item-inner">
                             <img className="icon" src="./secure-icon.svg" alt="" />
@@ -34,7 +34,7 @@ const WhyChooseUsComponent = () => {
                         <p className="more-description">Secure fund transfers, ensuring your money is safely and promptly delivered to its destination.</p>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
                     <div className="choose-item-outer">
                         <div className="choose-item-inner">
                             <img className="icon" src="./borderless-icon.svg" alt="" />
