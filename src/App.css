@@ -169,6 +169,13 @@ p {
   .rectangle {
     height: 30%;
   }
+
+  .aboutus-text .heading {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+  }
 }
 
 .aboutus-container {
@@ -237,11 +244,12 @@ p {
 .col-sm{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .aboutus-img {
-  width: 511px;
-  height: 352px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -278,10 +286,9 @@ p {
 .service {
   position: relative;
   width: auto;
-  height: 314px;
+  height: auto;
   border-radius: 10px;
   align-self: center;
-  margin-bottom: 20px;
 }
 
 .services {
@@ -311,7 +318,6 @@ p {
   font-weight: 400;
   line-height: normal;
   white-space: normal;
-  margin-bottom: 5px;
   text-align: center;
 }
 
