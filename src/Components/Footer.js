@@ -57,8 +57,7 @@ const FooterComponent = () => {
             <div className="col-md-7 col-lg-8 text-center text-md-start">
               <div className="p-3">
                 © 2023 Copyright :
-                <a className="text-white" href="#!"> KimiPay</a>
-
+                <a className="text-white " href="#!">KimiPay</a>
               </div>
             </div>
             <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">

@@ -30,21 +30,21 @@ function CarouselComponent() {
             <div className="carousel-item active">
                 <div className="rectangle"></div>
                 <img src="./carousel-1.jpg" className="d-block w-100" alt="Wild Landscape" />
-                <div className="carousel-caption d-none d-md-block position-absolute top-0 start-0">
+                <div className="carousel-caption d-md-block d-md-block position-absolute top-0 start-0">
                     <h6>Providing you</h6>
                     <h1><span className="blue-text">Secure</span> & <span className="blue-text">Reliable</span> e-Payment Platform</h1>
                     <p>Experience the future of hassle-free e-payments with Kimipay's cutting-edge solutions that set new standards for security and reliability.</p>
                 </div>
-                </div>
-                <div className="carousel-item">
+            </div>
+            <div className="carousel-item">
                 <div className="rectangle"></div>
                 <img src="./carousel-2.jpg" className="d-block w-100" alt="Camera" />
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                </div>
-                <div className="carousel-item">
+            </div>
+            <div className="carousel-item">
                 <div className="rectangle"></div>
                 <img src="./carousel-3.jpg" className="d-block w-100" alt="Exotic Fruits" />
                 <div className="carousel-caption d-none d-md-block">
