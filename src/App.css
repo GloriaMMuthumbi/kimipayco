@@ -81,6 +81,7 @@ p {
 .section {
   display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 .row {
@@ -97,6 +98,7 @@ p {
   width: auto;
   height: auto;
   border-radius: 10px;
+  margin-left: 10%;
 }
 
 .aboutus-text{
@@ -104,6 +106,7 @@ p {
   padding: 0;
   display: flex;
   justify-content: center;
+  margin-right: 10%;
 }
 
 .aboutus-text .heading {
@@ -119,7 +122,7 @@ p {
 }
 
 .blue-text {
-  color: #3799d4;
+  color: #009CFF;
 }
 
 .paragraph {
@@ -446,11 +449,17 @@ a:hover, a:focus {
   }
 
   .service-name {
-    white-space: nowrap;
+    white-space: normal;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 95%;
   }
 
   .services {
-    padding-bottom: 20px;
+    width: 100%;
+    background-color: cyan;
   }
 
   .aboutus-img {
@@ -480,8 +489,8 @@ a:hover, a:focus {
   .col-md-3 .card {
     border-radius: 50%;
     background-color: #0084d8;
-    height: 57%;
-    width: 100%;
+    height: 180px;
+    width: 180px;
     justify-content: center;
     align-items: center;
     border: 8px solid #009CFF;

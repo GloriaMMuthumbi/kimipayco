@@ -1,6 +1,6 @@
 const AboutUsComponent = () => {
     return ( 
-        <div className="container">
+        <div className="container-fluid section-section">
             <div className="row section">
                 <div className="title">
                     <div className="lines">
@@ -27,7 +27,7 @@ const AboutUsComponent = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default AboutUsComponent;

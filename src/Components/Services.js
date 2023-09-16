@@ -3,7 +3,11 @@ import React from 'react';
 const ServicesComponent = () => {
   return (
     <div className="container">
-      <div className="row section">
+
+      <div className='container-fluid'>
+
+      </div>
+      {/* <div className="row section">
         <div className="title">
           <div className="lines">
             <div className="short-line left"></div>
@@ -36,7 +40,7 @@ const ServicesComponent = () => {
             <p className="service-name">BULK SMS</p> 
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
