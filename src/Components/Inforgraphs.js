@@ -2,7 +2,7 @@ const InforgraphComponent = () => {
     return ( 
         <div className="container-fluid">
             <div className="row justify-content-center">
-                <div className="row justify-content-between">
+                <div className="row justify-content-between infograph-container">
                     <div className="col-md-auto infograph">
                         <div className="outer">
                             <div className="inner">

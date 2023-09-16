@@ -9,7 +9,7 @@ import WhyChooseUsComponent from './Components/WhyChooseUs';
 
 function App() {
   return (
-    <div>
+    <div className='App-container'>
       <NavbarComponent />
       <CarouselCompononent />
       <InforgraphComponent />
