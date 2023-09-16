@@ -1,42 +1,40 @@
 const InforgraphComponent = () => {
     return ( 
-        <div className="container-fluid">
-            <div className="row justify-content-center">
-                <div className="row justify-content-between infograph-container">
-                    <div className="col-md-auto infograph">
-                        <div className="outer">
-                            <div className="inner">
-                                <p className="number">+100k</p>
-                                <p className="description">Transactions Processed</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-auto infograph">
-                        <div className="outer">
-                            <div className="inner">
-                                <p className="number">+1M</p>
-                                <p className="description">SMS Units Processed</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-auto infograph">
-                        <div className="outer">
-                            <div className="inner">
-                                <p className="number">14</p>
-                                <p className="description">Number of Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-auto infograph">
-                        <div className="outer">
-                            <div className="inner">
-                                <p className="number">24/7</p>
-                                <p className="description">Technical Support</p>
-                            </div>
+        <div className="container-fluid mt-4">
+            <div class="row card-row">
+                <div class="col-md-3 col-sm-12 card-container">
+                    <div class="card circular-card">
+                        <div class="card-body">
+                            <h5 class="card-title">+100k</h5>
+                            <p class="card-text">Transactions Processed</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3 col-sm-12 card-container">
+                    <div class="card circular-card">
+                        <div class="card-body">
+                            <h5 class="card-title">+1M</h5>
+                            <p class="card-text">SMS Units Processed</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-3 col-sm-12 card-container">
+                    <div class="card circular-card">
+                        <div class="card-body">
+                            <h5 class="card-title">14</h5>
+                            <p class="card-text">Number of Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 card-container">
+                    <div class="card circular-card">
+                        <div class="card-body">
+                            <h5 class="card-title">24/7</h5>
+                            <p class="card-text">Technical Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

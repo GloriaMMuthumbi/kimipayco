@@ -19,67 +19,9 @@
   font-weight: bolder;
 }
 
-.infograph-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-.infograph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: auto;
-}
-
-.infograph-container:last-child{
-  padding-right: 10%;
-}
-
-.infograph-container:first-child {
-  padding-left: 10%;
-}
-
-.outer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #009CFF;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin: 12px;
-}
-
-.inner {
-    width: 90%;
-    background-color: #0084d8;
-    border-radius: 50%;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
 p {
     margin: 0;
     color: white;
-}
-
-.number {
-    font-weight: 700;
-    font-size: 1.8em;
-    text-align: center;
-    width: 130px;
-}
-
-.description {
-    text-align: center;
-    font-size: 0.9em;
-    width: 110px;
 }
 
 .aboutus-container {
@@ -418,22 +360,60 @@ a:hover, a:focus {
   text-align: start;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27vh;
+}
+
+.col-md-3 .card {
+  border-radius: 50%;
+  background-color: #0084d8;
+  height: 90%;
+  width: 58%;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #009CFF;
+}
+
+.inner-circular-card {
+  height: 90%;
+  width: 100%;
+  background-color: #009CFF;
+}
+
+.card-title {
+  font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    width: 130px;
+    color: white;
+    white-space: nowrap;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
 @media screen and (min-width: 993px) {
-  .outer {
+
+  .outer{
     min-width: 80%;
+    padding: 8px 0;
   }
 
   .inner {
     max-width: 175px; 
-    padding: 8%;
-  }
-
-  .number {
-    font-size: 2.5em;
-  }
-
-  .description {
-    font-size: 0.9em;
+    padding: 8px 8px;
   }
 
   .choose-item-outer {
@@ -460,10 +440,6 @@ a:hover, a:focus {
     font-size: 0.9rem !important;
   }
 
-  .infograph-container{
-    padding: 0 !important;
-  }
-
   .carousel-indicators > button {
     width: 5px;
     height: 12px;
@@ -475,6 +451,61 @@ a:hover, a:focus {
 
   .services {
     padding-bottom: 20px;
+  }
+
+  .aboutus-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .aboutus-text .heading{
+    font-size: 1.5rem;
+  }
+
+  .aboutus-text p{
+    font-size: 0.8rem;
+  }
+
+  .outer{
+    min-width: 80%;
+    padding: 8px 0;
+  }
+
+  .inner {
+    max-width: 175px; 
+    padding: 8px 8px;
+  }
+
+  .col-md-3 .card {
+    border-radius: 50%;
+    background-color: #0084d8;
+    height: 57%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #009CFF;
+  }
+  
+  .card-title {
+    font-weight: 700;
+      font-size: 2em;
+      text-align: center;
+      width: 130px;
+      color: white;
+      white-space: nowrap;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-text {
+    white-space: nowrap;
+    font-size: 0.85rem;
   }
 
 }
@@ -491,16 +522,6 @@ a:hover, a:focus {
     border-bottom: solid 1px;
     height: 100%;
     border-color: #cfcfcc;
-  }
-
-  .number {
-    font-size: 1.5em;
-    margin: 0;
-  }
-
-  .description {
-    font-size: 1em;
-    white-space: wrap;
   }
 
   .lines {
@@ -542,7 +563,7 @@ a:hover, a:focus {
     color: #111;
     font-size: 20px;
     font-weight: 700;
-    margin: 0;
+    margin-top: 10px;
   }
 
   .carousel-caption h6 {
@@ -563,20 +584,55 @@ a:hover, a:focus {
     height: 12px;
   }
 
-  .infograph-container {
+  .service {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 !important;
-  }
-
-  .infograph {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+  }
+
+  .service-img {
     width: 50%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  .card-container {
+    width: 50% !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col-md-3 .card {
+    border-radius: 50%;
+    background-color: #0084d8;
+    height: 65%;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #009CFF;
+  }
+  
+  .card-title {
+    font-weight: 700;
+      font-size: 1.5em;
+      text-align: center;
+      width: 130px;
+      color: white;
+      white-space: nowrap;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-text {
+    white-space: nowrap;
+    font-size: 0.58rem;
   }
 }
