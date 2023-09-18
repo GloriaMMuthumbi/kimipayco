@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  content: "";
+}
+
 .submit-btn {
   background-color: #009CFF;
   text-transform: uppercase;
@@ -249,7 +253,7 @@ a:hover, a:focus {
   color: #c7c7c7;
 }
 
-.text-white .link:hover {
+.text-white.link:hover {
   font-weight: 600;
   color: white;
 }
@@ -370,7 +374,7 @@ a:hover, a:focus {
   height: 27vh;
 }
 
-.col-md-3 .card {
+.card-container .card {
   border-radius: 50%;
   background-color: #0084d8;
   height: 90%;
@@ -388,11 +392,38 @@ a:hover, a:focus {
 
 .card-title {
   font-weight: 700;
-    font-size: 2em;
-    text-align: center;
-    width: 130px;
-    color: white;
-    white-space: nowrap;
+  font-size: 2em;
+  text-align: center;
+  width: 130px;
+  color: white;
+  white-space: nowrap;
+}
+
+.services-card {
+  display: flex;
+  justify-content: center;
+}
+
+
+.services-card .card-title{
+  color: #000;
+  font-size: 1rem;
+  text-align: start;
+  width: 100%;
+}
+
+.btn.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-self: flex-start;
+  background-color: #009CFF;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0084d8;
 }
 
 .card-body {
@@ -405,6 +436,13 @@ a:hover, a:focus {
 .card-text {
   white-space: nowrap;
   font-size: 0.95rem;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 993px) {
@@ -460,12 +498,17 @@ a:hover, a:focus {
   .services {
     width: 100%;
     background-color: cyan;
+    justify-content: space-between;
   }
 
   .aboutus-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+  }
+
+  .aboutus-text {
+    margin-left: 3%;
   }
 
   .aboutus-text .heading{
@@ -486,7 +529,7 @@ a:hover, a:focus {
     padding: 8px 8px;
   }
 
-  .col-md-3 .card {
+  .card-container .card {
     border-radius: 50%;
     background-color: #0084d8;
     height: 180px;
@@ -498,11 +541,11 @@ a:hover, a:focus {
   
   .card-title {
     font-weight: 700;
-      font-size: 2em;
-      text-align: center;
-      width: 130px;
-      color: white;
-      white-space: nowrap;
+    font-size: 2em;
+    text-align: center;
+    width: 130px;
+    color: white;
+    white-space: nowrap;
   }
   
   .card-body {
@@ -515,6 +558,30 @@ a:hover, a:focus {
   .card-text {
     white-space: nowrap;
     font-size: 0.85rem;
+  }
+
+  .services-card .card-title{
+    color: #000;
+    font-size: 0.75rem;
+    text-align: center;
+    width: 100%;
+    text-align: start;
+  }
+
+  .btn.btn-primary {
+    width: auto;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: flex-start;
+  }
+
+  .section-intro {
+    font-size: 0.95rem;
   }
 
 }
@@ -614,7 +681,7 @@ a:hover, a:focus {
     margin: 0;
   }
 
-  .col-md-3 .card {
+  .card-container .card {
     border-radius: 50%;
     background-color: #0084d8;
     height: 65%;
@@ -643,5 +710,11 @@ a:hover, a:focus {
   .card-text {
     white-space: nowrap;
     font-size: 0.58rem;
+  }
+
+  .services-card {
+    background-color: #0084d8;
+    justify-content: center;
+    align-items: center;
   }
 }

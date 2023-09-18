@@ -56,7 +56,7 @@ const FooterComponent = () => {
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8 text-center text-md-start">
               <div className="p-3">
-                © 2023 Copyright :
+                © 2023 Copyright:
                 <a className="text-white " href="#!">KimiPay</a>
               </div>
             </div>

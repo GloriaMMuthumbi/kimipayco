@@ -14,7 +14,7 @@ const AboutUsComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row aboutus-ex">
                 <div className="col-sm">
                     <img src="./about.jpg" alt="about us" className="aboutus-img" />
                 </div>
