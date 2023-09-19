@@ -21,8 +21,8 @@ function NavbarComponent() {
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
                             <Nav.Link href='#aboutus'>About us</Nav.Link>
-                            <Nav.Link href='#!'>Services</Nav.Link>
-                            <Nav.Link href="#!">Contact Us</Nav.Link>
+                            <Nav.Link href='#services'>Services</Nav.Link>
+                            <Nav.Link href="#contactus">Contact Us</Nav.Link>
                         </Nav>
                         <Button className='submit-btn'>Get Started</Button>
                         </Navbar.Collapse>
@@ -31,10 +31,16 @@ function NavbarComponent() {
             </div>
             <CarouselComponent />
             <InforgraphComponent />
-            <AboutUsComponent id="aboutus"/>
-            <ServicesComponent />
+            <div id="aboutus">
+                <AboutUsComponent />
+            </div>
+            <div id="services">
+                <ServicesComponent />
+            </div>
             <WhyChooseUsComponent />
-            <FooterComponent />
+            <div id="contactus">
+                <FooterComponent />
+            </div>
         </>
     );
 }
