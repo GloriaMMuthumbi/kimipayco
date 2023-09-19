@@ -277,7 +277,7 @@ a:hover, a:focus {
   transform: scale(1);
 }
 
-.carousel-indicators > button {
+/* .carousel-indicators {
   margin: 5px;
   width: 15px;
   height: 15px;
@@ -285,7 +285,7 @@ a:hover, a:focus {
   border: 10px;
   border-color: #3799D4;
   margin-bottom: 15px;
-}
+} */
 
 .navbar-item:active {
   transform: scale(1);
@@ -354,7 +354,7 @@ a:hover, a:focus {
 
 .card-container .card {
   border-radius: 50%;
-  background-color: #0084d8;
+  background-color: #2f7eaf;
   height: 90%;
   width: 58%;
   justify-content: center;
@@ -446,18 +446,6 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 575px) and (max-width: 992px) {
-  .carousel-caption h6 {
-    font-size: 0.8rem !important;
-  }
-  
-  .carousel-caption h1 {
-    font-size: 2.3rem !important;
-  }
-  
-  .carousel-caption p {
-    font-size: 0.9rem !important;
-  }
-
   .carousel-indicators > button {
     width: 5px;
     height: 12px;
@@ -481,14 +469,6 @@ a:hover, a:focus {
 
   .aboutus-text {
     margin-left: 3%;
-  }
-
-  .aboutus-text .heading{
-    font-size: 1.5rem;
-  }
-
-  .aboutus-text p{
-    font-size: 0.8rem;
   }
 
   .card-container .card {
@@ -627,19 +607,6 @@ a:hover, a:focus {
     font-size: 20px;
     font-weight: 700;
     margin-top: 10px;
-  }
-
-  .carousel-caption h6 {
-    font-size: 0.5rem !important;
-  }
-  
-  .carousel-caption h1 {
-    font-size: 1.0rem !important;
-  }
-  
-  .carousel-caption p {
-    font-size: 0.5rem;
-    margin-top: 5px !important;
   }
 
   .carousel-indicators > button {
