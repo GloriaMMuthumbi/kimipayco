@@ -1,6 +1,4 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './ExampleCarouselImage'; 
+import React from 'react'; 
 import '../App.css';
 
 const CarouselComponent = () => {
@@ -9,9 +7,9 @@ const CarouselComponent = () => {
             <div class="carousel slide">
                 <div class="carousel-inner">
                     <ol class="carousel-indicators">
-                        <li data-mdb-target="0" class=""></li>
+                        <li data-mdb-target="0" class="active"></li>
                         <li data-mdb-target="1" class=""></li>
-                        <li data-mdb-target="2" class="active"></li>
+                        <li data-mdb-target="2" class=""></li>
                     </ol>
                     <div class="carousel-item">
                         <img class="w-100 d-block" src="./carousel-1.jpg" alt="..." />

@@ -14,15 +14,15 @@ function NavbarComponent() {
     return (
         <>
             <div className="container-fluid mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-                <Navbar expand="lg" className="bg-body-tertiary container-fluid">
+                <Navbar expand="lg" className="bg-body-tertiary container-fluid sticky-top">
                     <Container>
                     <a href="/" className="pull-left"><img src="./logo22.png" alt='' height={50} /></a> 
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link href='#aboutus'>About us</Nav.Link>
-                            <Nav.Link href='#services'>Services</Nav.Link>
-                            <Nav.Link href="#contactus">Contact Us</Nav.Link>
+                            <Nav.Link href='#aboutus' className='fw-bolder text-dark nav-link'>About us</Nav.Link>
+                            <Nav.Link href='#services' className='fw-bolder text-dark nav-link'>Services</Nav.Link>
+                            <Nav.Link href="#contactus" className='fw-bolder text-dark nav-link'>Contact Us</Nav.Link>
                         </Nav>
                         <Button className='submit-btn'>Get Started</Button>
                         </Navbar.Collapse>

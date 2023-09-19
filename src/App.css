@@ -2,7 +2,9 @@
   scroll-margin-top: 20vh;
 }
 
-
+.text-dark {
+  font-weight: 600;
+}
 
 .App-container {
   width: 100%;
