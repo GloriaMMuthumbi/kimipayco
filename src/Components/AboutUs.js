@@ -22,8 +22,8 @@ const AboutUsComponent = () => {
                 <h2 className="heading">#1 Digital Solution With <span className="blue-text">2 years</span> of Experience</h2>
                     <p className="paragraph">Kimipay is an e-payment platform that makes it easier, 
                         secure and reliable to transfer funds within and across 
-                        the boarders. We aendavor to bring you an agile platform 
-                        for your remittance purposes in over 16 major currencies.</p>
+                        the borders. We endavour to bring you an agile platform 
+                        for your remmitance purposes in over 16 major currencies.</p>
                 </div>
             </div>
         </div>

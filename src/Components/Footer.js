@@ -34,7 +34,7 @@ const FooterComponent = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-col">
               <h6 className="text-uppercase mb-4 font-weight-bold">Our Services</h6>
               <p>
-                <a className="text-white link" href="#!">Remittance</a>
+                <a className="text-white link" href="#!">Remmitance</a>
               </p>
               <p>
                 <a className="text-white link" href="#!">Revenue Management</a>

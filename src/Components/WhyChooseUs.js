@@ -38,9 +38,9 @@ const WhyChooseUsComponent = () => {
                     <div className="choose-item-outer">
                         <div className="choose-item-inner">
                             <img className="icon" src="./borderless-icon.svg" alt="" />
-                            <p className="description">Borderless remittance services.</p>
+                            <p className="description">Borderless remmitance services.</p>
                         </div>
-                        <p className="more-description">Experience seamless and borderless remittance services with KimiPay, ensuring fast and secure international money transfers without the hassle of traditional borders.</p>
+                        <p className="more-description">Experience seamless and borderless remmitance services with KimiPay, ensuring fast and secure international money transfers without the hassle of traditional borders.</p>
                     </div>
                 </div>
             </div>

@@ -3,23 +3,14 @@
   max-width: 100%;
 }
 
-.navbar-item {
-  color: #009CFF;
-  font-weight: 500;
-}
-
-.carousel {
-  margin-bottom: 20px;
-}
-
 .carousel-control-prev, .carousel-control-next {
   content: "";
 }
 
 .submit-btn {
-  background-color: #009CFF;
+  background-color: #3799D4;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
@@ -57,7 +48,7 @@ p {
 .short-line {
   width: 2vw;
   height: 1.5px;
-  background-color: #009CFF;
+  background-color: #3799D4;
 }
 
 .left {
@@ -68,12 +59,12 @@ p {
 .long-line {
   width: 5vw;
   height: 1.5px;
-  background-color: #009CFF;
+  background-color: #3799D4;
   margin-top: 6px;
 }
 
 .section-title {
-  color: #009CFF;
+  color: #3799D4;
   text-transform: uppercase;
   font-size: 18px;
   text-align: center;
@@ -114,19 +105,19 @@ p {
 }
 
 .aboutus-text .heading {
-  color: #111;
+  color: #231f20;
   font-size: 32px;
   font-weight: 700;
   margin: 0;
 }
 
 .heading{
-  color: black;
+  color: #231f20;
   font-weight: 700;
 }
 
 .blue-text {
-  color: #009CFF;
+  color: #3799D4;
 }
 
 .paragraph {
@@ -136,32 +127,28 @@ p {
   padding-top: 10px;
 }
 
-.service {
-  position: relative;
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-  align-self: center;
-}
-
-.services {
-  display: flex;
-  width: 100%;
-}
-
 .service-name {
-  color: #000;
+  color: #231f20;
   margin: 10px 10px 40px 10px;
   font-weight: 600;
   text-align: center;
 }
 
-.service-img {
+.card.services-card{
+  border-radius: 20px !important;
+  border: 1em !important;
+  padding: 10px !important;
+}
+
+.card.services-card:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   flex-shrink: 0;
-  border-radius: 10px;
 }
 
 .section-intro {
@@ -224,7 +211,7 @@ a:hover, a:focus {
 
 
 .choose-item-inner .description {
-  color:#009CFF;
+  color:#3799D4;
   font-size: 1em;
   font-weight: 600;
   text-align: start;
@@ -251,25 +238,16 @@ a:hover, a:focus {
 .text-white .link {
   text-decoration: none;
   color: #c7c7c7;
+  transition: transform 2000ms ease-in-out, font-weight 100ms ease-in-out, color 1000ms ease-in-out, backface-visibility 100ms;
+  backface-visibility: hidden;
+  will-change: transform, font-weight, color;
 }
 
 .text-white.link:hover {
   font-weight: 600;
   color: white;
-}
-
-.carousel-inner {
-  position: relative;
-  white-space: nowrap;
-  transition: transform 1000ms;
-}
-
-.carousel-item {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  background: none; 
+  transform: scale(1.05);
+  backface-visibility: hidden;
 }
 
 .rectangle {
@@ -280,26 +258,17 @@ a:hover, a:focus {
   z-index: 1;
 }
 
-.carousel-item-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.carousel-item-information {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  width: 90%;
-  color: #ffffff;
-  text-align: left;
+.nav-link.active{
+  background-color: transparent;
 }
 
 .white-text {
   color: white;
+}
+
+.active{
+  background-color: #3799D4;
+  transform: scale(1);
 }
 
 .carousel-indicators > button {
@@ -308,13 +277,14 @@ a:hover, a:focus {
   height: 15px;
   border-radius: 50%;
   border: 10px;
-  border-color: #009CFF;
+  border-color: #3799D4;
   margin-bottom: 15px;
 }
 
-.active {
+.navbar-item:active {
   transform: scale(1);
-  background-color: #009CFF;
+  color: #3799D4;
+  font-weight: 600;
 }
 
 .rectangle {
@@ -341,6 +311,8 @@ a:hover, a:focus {
   text-align: start;
   font-size: 1rem;
 }
+
+
 
 .carousel-caption h1 {
   margin-top: 0;
@@ -381,22 +353,20 @@ a:hover, a:focus {
   width: 58%;
   justify-content: center;
   align-items: center;
-  border: 8px solid #009CFF;
+  border: 8px solid #3799D4;
 }
 
 .inner-circular-card {
   height: 90%;
   width: 100%;
-  background-color: #009CFF;
+  background-color: #3799D4;
 }
 
 .card-title {
   font-weight: 700;
   font-size: 2em;
   text-align: center;
-  width: 130px;
   color: white;
-  white-space: nowrap;
 }
 
 .services-card {
@@ -406,9 +376,10 @@ a:hover, a:focus {
 
 
 .services-card .card-title{
-  color: #000;
+  color: #231f20;
   font-size: 1rem;
-  text-align: start;
+  text-align: center;
+  white-space: normal;
   width: 100%;
 }
 
@@ -418,12 +389,12 @@ a:hover, a:focus {
   align-items: center;
   text-transform: uppercase;
   font-weight: 600;
-  align-self: flex-start;
-  background-color: #009CFF;
+  align-self: center;
+  background-color: #3799D4;
 }
 
 .btn.btn-primary:hover {
-  background-color: #0084d8;
+  background-color: #2f7eaf;
 }
 
 .card-body {
@@ -447,14 +418,14 @@ a:hover, a:focus {
 
 @media screen and (min-width: 993px) {
 
-  .outer{
-    min-width: 80%;
-    padding: 8px 0;
-  }
-
-  .inner {
-    max-width: 175px; 
-    padding: 8px 8px;
+  .card-container .card {
+    border-radius: 50%;
+    background-color: #2f7eaf;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #3799D4;
   }
 
   .choose-item-outer {
@@ -468,13 +439,13 @@ a:hover, a:focus {
   
 }
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 575px) and (max-width: 992px) {
   .carousel-caption h6 {
     font-size: 0.8rem !important;
   }
   
   .carousel-caption h1 {
-    font-size: 2.5rem !important;
+    font-size: 2.3rem !important;
   }
   
   .carousel-caption p {
@@ -489,16 +460,11 @@ a:hover, a:focus {
   .service-name {
     white-space: normal;
   }
-  
-  .service-img {
-    width: 100%;
-    height: 95%;
-  }
 
-  .services {
-    width: 100%;
-    background-color: cyan;
-    justify-content: space-between;
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutus-img {
@@ -519,33 +485,22 @@ a:hover, a:focus {
     font-size: 0.8rem;
   }
 
-  .outer{
-    min-width: 80%;
-    padding: 8px 0;
-  }
-
-  .inner {
-    max-width: 175px; 
-    padding: 8px 8px;
-  }
-
   .card-container .card {
     border-radius: 50%;
-    background-color: #0084d8;
+    background-color: #2f7eaf;
     height: 180px;
     width: 180px;
     justify-content: center;
     align-items: center;
-    border: 8px solid #009CFF;
+    border: 8px solid #3799D4;
   }
   
   .card-title {
     font-weight: 700;
     font-size: 2em;
     text-align: center;
-    width: 130px;
     color: white;
-    white-space: nowrap;
+    white-space: normal;
   }
   
   .card-body {
@@ -561,11 +516,11 @@ a:hover, a:focus {
   }
 
   .services-card .card-title{
-    color: #000;
-    font-size: 0.75rem;
+    color: #231f20;
+    font-size: 0.85rem;
     text-align: center;
     width: 100%;
-    text-align: start;
+    text-align: center;
   }
 
   .btn.btn-primary {
@@ -577,16 +532,37 @@ a:hover, a:focus {
     font-size: 0.65rem;
     text-transform: uppercase;
     font-weight: 700;
-    align-self: flex-start;
   }
 
   .section-intro {
     font-size: 0.95rem;
   }
 
+  .card.services-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    white-space: nowrap;
+  }
+
+  .card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .col-md-3.col-12.service {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 574px) {
   .hr-mobile {
     display: none;
   }
@@ -610,7 +586,7 @@ a:hover, a:focus {
   .short-line {
     width: 5vw;
     height: 1px;
-    background-color: #009CFF;
+    background-color: #3799D4;
   }
   
   .left {
@@ -621,12 +597,12 @@ a:hover, a:focus {
   .long-line {
     width: 10vw;
     height: 1.5px;
-    background-color: #009CFF;
+    background-color: #3799D4;
     margin-top: 6px;
   }
   
   .section-title {
-    color: #009CFF;
+    color: #3799D4;
     text-transform: uppercase;
     font-size: 18px;
     text-align: center;
@@ -635,8 +611,13 @@ a:hover, a:focus {
     font-weight: 700;
   }
 
+  .aboutus-text {
+    margin: 0 !important;
+    justify-content: center;
+  }
+
   .aboutus-text .heading {
-    color: #111;
+    color: #231f20;
     font-size: 20px;
     font-weight: 700;
     margin-top: 10px;
@@ -667,7 +648,7 @@ a:hover, a:focus {
     align-items: center;
   }
 
-  .service-img {
+  .card-img-top {
     width: 50%;
     height: auto;
     object-fit: cover;
@@ -684,20 +665,19 @@ a:hover, a:focus {
   .card-container .card {
     border-radius: 50%;
     background-color: #0084d8;
-    height: 65%;
-    width: 85%;
+    height: 125px;
+    width: 125px;
     justify-content: center;
     align-items: center;
-    border: 8px solid #009CFF;
+    border: 8px solid #3799D4;
   }
   
   .card-title {
     font-weight: 700;
-      font-size: 1.5em;
-      text-align: center;
-      width: 130px;
-      color: white;
-      white-space: nowrap;
+    font-size: 1.0em;
+    text-align: center;
+    color: white;
+    white-space: normal !important;
   }
   
   .card-body {
@@ -705,15 +685,41 @@ a:hover, a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   
   .card-text {
     white-space: nowrap;
-    font-size: 0.58rem;
+    font-size: 0.6rem;
+  }
+
+  .services-card .card-title{
+    font-size: 0.8rem;
   }
 
   .services-card {
-    background-color: #0084d8;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn.btn-primary{
+    font-size: 0.6rem;
+  }
+
+  .card-body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .service {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
