@@ -8,6 +8,7 @@ import FooterComponent from './Footer';
 import InforgraphComponent from './Inforgraphs';
 import ServicesComponent from './Services';
 import WhyChooseUsComponent from './WhyChooseUs';
+import { Link } from 'react-router-dom';
 
 function NavbarComponent() {
 
@@ -20,11 +21,13 @@ function NavbarComponent() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link href='#aboutus' className='fw-bolder text-dark nav-link'>About us</Nav.Link>
-                            <Nav.Link href='#services' className='fw-bolder text-dark nav-link'>Services</Nav.Link>
-                            <Nav.Link href="#contactus" className='fw-bolder text-dark nav-link'>Contact Us</Nav.Link>
+                            <Nav.Link href='#aboutus' className='text-dark nav-link'>About us</Nav.Link>
+                            <Nav.Link href='#services' className='text-dark nav-link'>Services</Nav.Link>
+                            <Nav.Link href="#contactus" className='text-dark nav-link'>Contact Us</Nav.Link>
                         </Nav>
-                        <Button className='submit-btn'>Get Started</Button>
+                        <Link to="/register">
+                            <Button className='shadow-none submit-btn'>Get Started</Button>
+                        </Link>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

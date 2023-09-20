@@ -3,7 +3,8 @@
 }
 
 .text-dark {
-  font-weight: 600;
+  font-weight: 300;
+  color: #3799D4;
 }
 
 .App-container {
@@ -18,8 +19,9 @@
 .submit-btn {
   background-color: #3799D4;
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: bolder;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  border-radius: 50px;
 }
 
 p {
@@ -258,14 +260,15 @@ a:hover, a:focus {
   backface-visibility: hidden;
 }
 
-/* .rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
+.infographs {
+  width: 80%;
+}
+
+.infograph-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .nav-link.active{
   background-color: transparent;
@@ -475,13 +478,9 @@ a:hover, a:focus {
   }
 
   .card-container .card {
-    border-radius: 50%;
-    background-color: #2f7eaf;
-    height: 180px;
-    width: 180px;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid #3799D4;
+    max-height: 170px;
+    max-width: 170px;
+    width: 100%;
   }
   
   .card-title {
@@ -500,8 +499,9 @@ a:hover, a:focus {
   }
   
   .card-text {
-    white-space: nowrap;
+    white-space: normal;
     font-size: 0.85rem;
+    text-align: center;
   }
 
   .services-card .card-title{
@@ -633,24 +633,21 @@ a:hover, a:focus {
   }
 
   .card-container {
-    width: 50% !important;
+    width: 30% !important;
+    height: 100%;
     padding: 0;
-    margin: 0;
+    margin-right: 55px;
+    margin-bottom: 10px;
   }
 
   .card-container .card {
-    border-radius: 50%;
-    background-color: #0084d8;
-    height: 125px;
-    width: 125px;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid #3799D4;
+    max-height: 125px;
+    min-width: 125px;
   }
   
   .card-title {
     font-weight: 700;
-    font-size: 1.0em;
+    font-size: 1.5em;
     text-align: center;
     color: white;
     white-space: normal !important;
@@ -665,8 +662,9 @@ a:hover, a:focus {
   }
   
   .card-text {
-    white-space: nowrap;
+    white-space: normal;
     font-size: 0.6rem;
+    text-align: center;
   }
 
   .services-card .card-title{
@@ -678,6 +676,7 @@ a:hover, a:focus {
     align-items: center;
     width: 200px;
     height: auto;
+    margin-bottom: 20px;
   }
 
   .card-row {
