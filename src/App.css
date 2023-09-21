@@ -16,17 +16,16 @@
   content: "";
 }
 
-.submit-btn {
-  background-color: #3799D4;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: lighter;
-  border-radius: 50px;
-}
-
 p {
     margin: 0;
     color: white;
+}
+
+.aboutus-ex {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
 
 .aboutus-container {
@@ -100,7 +99,7 @@ p {
 }
 
 .aboutus-img {
-  width: auto;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   margin-left: 10%;
@@ -386,6 +385,9 @@ a:hover, a:focus {
   justify-content: center;
 }
 
+.carousel-caption {
+  margin-left: 15%;
+}
 
 .services-card .card-title{
   color: #231f20;
@@ -400,9 +402,10 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
   align-self: center;
   background-color: #3799D4;
+  border-radius: 25px;
 }
 
 .btn.btn-primary:hover {
@@ -418,7 +421,7 @@ a:hover, a:focus {
 
 .card-text {
   white-space: nowrap;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 .card-row {
@@ -452,6 +455,23 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 575px) and (max-width: 992px) {
+
+  .carousel-caption {
+    display: block !important;
+  }
+
+  .carousel-caption h6 {
+    font-size: 0.85rem ;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.6rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.95rem !important; 
+  }
+
   .carousel-indicators > button {
     width: 5px;
     height: 12px;
@@ -552,6 +572,23 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 574px) {
+
+  .carousel-caption {
+    display: block !important;
+  }
+
+  .carousel-caption h6 {
+    font-size: 0.65rem ;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem !important; 
+  }
+
   .hr-mobile {
     display: none;
   }
@@ -589,7 +626,7 @@ a:hover, a:focus {
     background-color: #3799D4;
     margin-top: 6px;
   }
-  
+
   .section-title {
     color: #3799D4;
     text-transform: uppercase;

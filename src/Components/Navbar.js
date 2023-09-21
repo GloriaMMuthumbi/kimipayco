@@ -26,7 +26,7 @@ function NavbarComponent() {
                             <Nav.Link href="#contactus" className='text-dark nav-link'>Contact Us</Nav.Link>
                         </Nav>
                         <Link to="/register">
-                            <Button className='shadow-none submit-btn'>Get Started</Button>
+                            <Button className='shadow-none'>Get Started</Button>
                         </Link>
                         </Navbar.Collapse>
                     </Container>
