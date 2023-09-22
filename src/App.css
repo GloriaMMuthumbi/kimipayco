@@ -12,6 +12,11 @@
   max-width: 100%;
 }
 
+.visibility-sensor {
+  height: 1px;
+  visibility: hidden;
+}
+
 .carousel-control-prev, .carousel-control-next {
   content: "";
 }

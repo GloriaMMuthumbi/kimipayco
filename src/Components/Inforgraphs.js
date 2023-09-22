@@ -1,28 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
 
 
 const InforgraphComponent = () => {
 
-    const [isVisible, setIsVisible] = useState(false);
+    const [isInView, setIsInView] = useState(false);
 
-    const onVisibilityChange = (newisVisible) => {
-        if (newisVisible) {
-            setIsVisible(true);
+    useEffect(() => {
+        const handleScroll = () => {
+            const element = document.getElementById("countup-section");
+            if (element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                setIsInView(true);
+            }
             }
         };
 
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+        }, []);
+    
     return ( 
         <div className="container-fluid mt-4 infograph-container">
             <div className="row card-row infographs">
                 <div className="col-md-3 col-sm-12 card-container">
                     <div className="card circular-card">
                         <div className="card-body">
-                            <h5 className="card-title">+
-                                    {isVisible && (
-                                        <CountUp end={100} duration={2} separator="," />
-                                    )}
+                            <h5 className="card-title countup-animation" id="countup-section">+
+                                {isInView && (
+                                    <CountUp end={100} duration={2} separator="," />
+                                )}
                             k</h5>
                             <p className="card-text">Transactions Processed</p>
                         </div>
@@ -32,7 +43,7 @@ const InforgraphComponent = () => {
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">+
-                                {isVisible && (
+                                {isInView && (
                                     <CountUp end={1} duration={2} separator="," />
                                 )}
                             M</h5>
@@ -44,7 +55,7 @@ const InforgraphComponent = () => {
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {isVisible && (
+                                {isInView && (
                                     <CountUp end={14} duration={2} />
                                 )}
                             </h5>
@@ -56,11 +67,11 @@ const InforgraphComponent = () => {
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {isVisible && (
+                                {isInView && (
                                     <CountUp end={24} duration={2} />
                                 )}
                             /
-                                {isVisible && (
+                                {isInView && (
                                     <CountUp end={7} duration={2} />
                                 )}
                             </h5>
@@ -69,9 +80,6 @@ const InforgraphComponent = () => {
                     </div>
                 </div>
             </div>
-            <VisibilitySensor onChange={onVisibilityChange}>
-                <div style={{ height: "1px" }}></div>
-            </VisibilitySensor>
         </div>
     );
 }
