@@ -761,13 +761,27 @@ a:hover, a:focus {
 .coming-soon-container {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;;
   align-items: center;
   height: 100vh;
 }
 
 .coming-soon-heading {
-  font-size: 8.5rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #3799D4;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.coming-soon-text p {
+  color: #231f20;
+  font-weight: 500;
+}
+
+.coming-soon-text a {
+  color: #3799D4;
+}
+
+.coming-soon-text a:hover {
+  color: #2f7eaf;
 }
