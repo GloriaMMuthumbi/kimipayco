@@ -32,7 +32,7 @@ const InforgraphComponent = () => {
                         <div className="card-body">
                             <h5 className="card-title countup-animation" id="countup-section">+
                                 {isInView && (
-                                    <CountUp end={100} duration={2} separator="," />
+                                    <CountUp end={100} duration={4} separator="," />
                                 )}
                             k</h5>
                             <p className="card-text">Transactions Processed</p>
@@ -44,7 +44,7 @@ const InforgraphComponent = () => {
                         <div className="card-body">
                             <h5 className="card-title">+
                                 {isInView && (
-                                    <CountUp end={1} duration={2} separator="," />
+                                    <CountUp end={1} duration={4} separator="," />
                                 )}
                             M</h5>
                             <p className="card-text">SMS Units Processed</p>
@@ -56,7 +56,7 @@ const InforgraphComponent = () => {
                         <div className="card-body">
                             <h5 className="card-title">
                                 {isInView && (
-                                    <CountUp end={14} duration={2} />
+                                    <CountUp end={14} duration={4} />
                                 )}
                             </h5>
                             <p className="card-text">Number of Clients</p>
@@ -68,11 +68,11 @@ const InforgraphComponent = () => {
                         <div className="card-body">
                             <h5 className="card-title">
                                 {isInView && (
-                                    <CountUp end={24} duration={2} />
+                                    <CountUp end={24} duration={4} />
                                 )}
                             /
                                 {isInView && (
-                                    <CountUp end={7} duration={2} />
+                                    <CountUp end={7} duration={4} />
                                 )}
                             </h5>
                             <p className="card-text">Technical Support</p>
