@@ -295,16 +295,6 @@ a:hover, a:focus {
   transform: scale(1);
 }
 
-/* .carousel-indicators {
-  margin: 5px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 10px;
-  border-color: #3799D4;
-  margin-bottom: 15px;
-} */
-
 .navbar-item:active {
   transform: scale(1);
   color: #3799D4;
@@ -335,8 +325,6 @@ a:hover, a:focus {
   text-align: start;
   font-size: 1rem;
 }
-
-
 
 .carousel-caption h1 {
   margin-top: 0;
@@ -442,6 +430,35 @@ a:hover, a:focus {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.coming-soon-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #231f20;
+  padding: 0;
+  white-space: normal;
+}
+
+.coming-soon-text p {
+  color: #231f20;
+}
+
+.coming-soon-text a {
+  color: #3799D4;
+}
+
+.coming-soon-text a:hover {
+  color: #2f7eaf;
 }
 
 @media screen and (min-width: 993px) {
@@ -582,7 +599,38 @@ a:hover, a:focus {
     margin-right: auto;
   }
 
+  .coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coming-soon-text {
+    width: 50vw;
+  }
+
+  .image {
+    width: 50vw;
+  }
+  .coming-soon-heading {
+    font-size: 4.5rem;
+    white-space: normal;
+  }
+
+  .coming-soon-text p { 
+    font-size: 1.2rem;
+  }
+
+  .coming-soon-text a {
+    font-size: 1.2rem;
+  }
+
+  .coming-soon-text img {
+    width: 175px;
+  }
 }
+
 
 @media screen and (max-width: 574px) {
 
@@ -756,32 +804,28 @@ a:hover, a:focus {
     justify-content: center;
     align-items: center;
   }
+
+  .coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coming-soon-heading {
+    font-size: 3rem;
+  }
+
+  .coming-soon-text p { 
+    font-size: 0.9rem;
+  }
+
+  .coming-soon-text a {
+    font-size: 0.9rem;
+  }
+
+  .coming-soon-text img {
+    width: 125px;
+  }
 }
 
-.coming-soon-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-}
-
-.coming-soon-heading {
-  font-size: 5rem;
-  font-weight: 700;
-  color: #3799D4;
-  padding: 0;
-  white-space: nowrap;
-}
-
-.coming-soon-text p {
-  color: #231f20;
-  font-weight: 500;
-}
-
-.coming-soon-text a {
-  color: #3799D4;
-}
-
-.coming-soon-text a:hover {
-  color: #2f7eaf;
-}
