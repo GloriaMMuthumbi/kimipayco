@@ -7,6 +7,14 @@
   color: #3799D4;
 }
 
+.container-fluid.carousel-container {
+  padding: 0;
+}
+
+.container-fluid.nav-bar {
+  padding: 0;
+}
+
 .App-container {
   width: 100%;
   max-width: 100%;
@@ -642,6 +650,14 @@ a:hover, a:focus {
     font-weight: 700;
   }
 
+  .infographs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aqua;
+  }
+
   .aboutus-text {
     margin: 0 !important;
     justify-content: center;
@@ -740,4 +756,18 @@ a:hover, a:focus {
     justify-content: center;
     align-items: center;
   }
+}
+
+.coming-soon-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;;
+  align-items: center;
+  height: 100vh;
+}
+
+.coming-soon-heading {
+  font-size: 8.5rem;
+  font-weight: 700;
+  color: #3799D4;
 }

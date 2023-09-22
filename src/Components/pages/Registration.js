@@ -1,8 +1,8 @@
+import ComingSoonComponent from "../ComingSoon";
+
 const RegistrationComponent = () => {
     return ( 
-        <>
-            <h1>Registration Page</h1>
-        </>
+        <ComingSoonComponent />
     );
 }
 

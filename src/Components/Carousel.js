@@ -7,7 +7,7 @@ import {
 
 const CarouselComponent = () => {
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid carousel-container'>
             <MDBCarousel showIndicators showControls fade>
                 <MDBCarouselItem
                     className='w-100 d-block'

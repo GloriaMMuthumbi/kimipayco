@@ -14,7 +14,7 @@ function NavbarComponent() {
 
     return (
         <>
-            <div className="container-fluid mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
+            <div className="container-fluid mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10 nav-bar">
                 <Navbar expand="lg" className="bg-body-tertiary container-fluid sticky-top">
                     <Container>
                     <a href="/" className="pull-left"><img src="./logo22.png" alt='' height={50} /></a> 
