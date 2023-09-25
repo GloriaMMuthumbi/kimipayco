@@ -27,7 +27,11 @@ const InforgraphComponent = () => {
     return ( 
         <div className="container-fluid mt-4 infograph-container">
             <div className="row card-row infographs">
-                <div className="col-md-3 col-sm-12 card-container">
+                <div className={`col-md-3 col-sm-12 card-container ${isInView ? "show" : ""}`}
+                    data-mdb-toggle="animation"
+                    data-mdb-animation-reset="false"
+                    data-mdb-animation="fade-in"
+                    >
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title countup-animation" id="countup-section">+
@@ -39,7 +43,7 @@ const InforgraphComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-12 card-container">
+                <div className={`col-md-3 col-sm-12 card-container ${isInView ? "show" : ""}`}>
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">+
@@ -51,7 +55,7 @@ const InforgraphComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-12 card-container">
+                <div className={`col-md-3 col-sm-12 card-container ${isInView ? "show" : ""}`}>
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">
@@ -63,7 +67,7 @@ const InforgraphComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-12 card-container">
+                <div className={`col-md-3 col-sm-12 card-container ${isInView ? "show" : ""}`}>
                     <div className="card circular-card">
                         <div className="card-body">
                             <h5 className="card-title">

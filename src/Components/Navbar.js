@@ -1,14 +1,12 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import AboutUsComponent from './AboutUs';
 import CarouselComponent from './Carousel';
 import FooterComponent from './Footer';
 import InforgraphComponent from './Inforgraphs';
 import ServicesComponent from './Services';
 import WhyChooseUsComponent from './WhyChooseUs';
-import { Link } from 'react-router-dom';
 
 function NavbarComponent() {
 

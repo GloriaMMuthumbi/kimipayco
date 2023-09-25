@@ -10,6 +10,10 @@ const CarouselComponent = () => {
         <div className='container-fluid carousel-container'>
             <MDBCarousel showIndicators showControls fade>
                 <MDBCarouselItem
+                    data-mdb-toggle="animation"
+                    data-mdb-animation-reset="false"
+                    data-mdb-animation="fade-in"
+                    data-mdb-animation-start="onLoad"
                     className='w-100 d-block'
                     itemId={1}
                     src='./carousel-1.jpg'
