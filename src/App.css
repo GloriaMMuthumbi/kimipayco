@@ -289,13 +289,14 @@ a:hover, a:focus {
 }
 
 .infographs {
-  width: 80%;
+  width: 100%;
 }
 
 .infograph-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .nav-link.active{
@@ -329,9 +330,8 @@ a:hover, a:focus {
 
 .carousel-caption{
   position: absolute;
-  top: 0%;
+  top: 40%;
   left: 0;
-  margin-top: 5%;
 }
 
 .carousel-caption h6 {
@@ -385,16 +385,16 @@ a:hover, a:focus {
 .card-container .card {
   border-radius: 50%;
   background-color: #2f7eaf;
-  height: 90%;
-  width: 58%;
+  max-width: 250px;
+  max-height: 250px;
   justify-content: center;
   align-items: center;
   border: 8px solid #3799D4;
 }
 
 .inner-circular-card {
-  height: 90%;
-  width: 100%;
+  max-height: 200%;
+  max-width: 100%;
   background-color: #3799D4;
 }
 
@@ -552,7 +552,7 @@ a:hover, a:focus {
   }
 
   .card-container .card {
-    max-height: 170px;
+    min-height: 170px;
     max-width: 170px;
     width: 100%;
   }
@@ -663,16 +663,18 @@ a:hover, a:focus {
   }
 
   .carousel-caption h6 {
-    font-size: 0.65rem ;
+    font-size: 0.45rem ;
   }
 
   .carousel-caption h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .carousel-caption p {
-    font-size: 0.8rem !important; 
+    font-size: 0.6rem !important; 
+    margin-top: 0;
   }
+
 
   .hr-mobile {
     display: none;
@@ -722,11 +724,20 @@ a:hover, a:focus {
     font-weight: 700;
   }
 
+  .infograph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .infographs {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    
+    margin-left: 10%;
   }
 
   .aboutus-text {
@@ -803,7 +814,7 @@ a:hover, a:focus {
   .services-card {
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
     animation: fadeInUp 1s ease-in-out;
@@ -822,12 +833,6 @@ a:hover, a:focus {
   .card-body{
     display: flex;
     justify-content: center;
-  }
-
-  .service {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .coming-soon-container {
@@ -852,5 +857,11 @@ a:hover, a:focus {
   .coming-soon-text img {
     width: 125px;
   }
+
+  .card-container .card {
+    max-width: 130px;
+  }
+
+  
 }
 

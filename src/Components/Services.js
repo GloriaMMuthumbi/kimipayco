@@ -19,7 +19,7 @@ const ServicesComponent = () => {
       </div>
       <div className='d-flex justify-content-center'>
       <div className='row card-row'>
-        <div className='col-md-3 col-sm-12 service'>
+        <div className='col-md-12 col-sm-12 service'>
           <div className="card services-card">
             <img className="card-img-top" src="./service-5.jpg" alt="Card image cap" />
             <div className="card-body">

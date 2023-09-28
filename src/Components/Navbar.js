@@ -31,10 +31,10 @@ function NavbarComponent() {
                 </Navbar>
             </div>
             <CarouselComponent />
-            <InforgraphComponent />
             <div id="aboutus">
                 <AboutUsComponent />
             </div>
+            <InforgraphComponent />
             <div id="services">
                 <ServicesComponent />
             </div>

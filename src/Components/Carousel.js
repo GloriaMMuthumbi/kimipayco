@@ -19,9 +19,11 @@ const CarouselComponent = () => {
                     src='./carousel-1.jpg'
                     alt='...'
                 >
-                    <h6 className="text-light fw-bolder ">Providing you</h6>
-                    <h1><span className="blue-text">Secure</span> &amp; <span className="blue-text">Reliable</span> e-Payment Platform</h1>
-                    <p className="fs-5 text">Experience the future of hassle-free e-payments with Kimipay's cutting-edge solutions that set new standards for security and reliability.</p>
+                    <div className="carousel-item-text">
+                        <h6 className="text-light fw-bolder">Providing you</h6>
+                        <h1><span className="blue-text">Secure</span> &amp; <span className="blue-text">Reliable</span> e-Payment Platform</h1>
+                        <p className="fs-5 text">Experience the future of hassle-free e-payments with Kimipay's cutting-edge solutions that set new standards for security and reliability.</p>
+                    </div>
                 </MDBCarouselItem>
 
                 <MDBCarouselItem
@@ -30,7 +32,7 @@ const CarouselComponent = () => {
                     src='./carousel-2.jpg'
                     alt='...'
                 >
-                    <h6 className="text-light fw-bolder ">We are leaders in</h6>
+                    <h6 className="text-light fw-bolder">We are leaders in</h6>
                     <h1><span className="blue-text">Plug</span> &amp; <span className="blue-text">Play</span> Solutions</h1>
                     <p className="fs-5 text">At Kimipay, we simplify your e-payment needs, offering intuitive solutions that guarantee both safety and dependability</p>
                 </MDBCarouselItem>
