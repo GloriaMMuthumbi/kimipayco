@@ -7,7 +7,7 @@ const WhyChooseUsComponent = () => {
                     <div className="short-line left"></div>
                     <div className="long-line left"></div>
                 </div>
-                <p className="section-title">Why Choose Us</p>
+                <h3 className="section-title">Why Choose Us</h3>
                 <div className="lines">
                     <div className="short-line right"></div>
                     <div className="long-line right"></div>

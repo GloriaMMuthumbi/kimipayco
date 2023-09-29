@@ -9,8 +9,8 @@
   }
 }
 
-.navbar-toggler-icon {
-  color: 1px solid #333;
+.fixed-top {
+  top: 0;
   z-index: 2;
 }
 
@@ -25,6 +25,7 @@
 
 .container-fluid.carousel-container {
   padding: 0;
+  margin-bottom: 2%;
 }
 
 .container-fluid.nav-bar {
@@ -104,7 +105,6 @@ p {
 .section-title {
   color: #3799D4;
   text-transform: uppercase;
-  font-size: 18px;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -144,7 +144,6 @@ p {
 
 .aboutus-text .heading {
   color: #231f20;
-  font-size: 32px;
   font-weight: 700;
   margin: 0;
 }
@@ -176,6 +175,7 @@ p {
   border-radius: 20px !important;
   border: 1em !important;
   padding: 10px !important;
+
 }
 
 .card.services-card:hover {
@@ -299,6 +299,11 @@ a:hover, a:focus {
   width: 100%;
 }
 
+.nav-link {
+  margin-left: 2%;
+  white-space: nowrap;
+}
+
 .nav-link.active{
   background-color: transparent;
 }
@@ -308,14 +313,7 @@ a:hover, a:focus {
 }
 
 .active{
-  background-color: #3799D4;
   transform: scale(1);
-}
-
-.navbar-item:active {
-  transform: scale(1);
-  color: #3799D4;
-  font-weight: 600;
 }
 
 .rectangle {
@@ -485,6 +483,11 @@ a:hover, a:focus {
   color: #2f7eaf;
 }
 
+.container-fluid.coming-soon {
+  padding-left: 5%;
+  padding-left: 5%;
+}
+
 @media screen and (min-width: 993px) {
 
   .card-container .card {
@@ -625,29 +628,29 @@ a:hover, a:focus {
 
   .coming-soon-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .coming-soon-text {
-    width: 50vw;
+    width: 100%;
   }
 
-  .image {
-    width: 50vw;
+  .coming-soon-img {
+    width: 100%;
+    display: flex;
   }
   .coming-soon-heading {
-    font-size: 4.5rem;
+    font-size: 3rem;
     white-space: normal;
   }
 
   .coming-soon-text p { 
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .coming-soon-text a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .coming-soon-text img {
@@ -660,6 +663,7 @@ a:hover, a:focus {
 
   .carousel-caption {
     display: block !important;
+    top: 30%;
   }
 
   .carousel-caption h6 {
@@ -667,11 +671,11 @@ a:hover, a:focus {
   }
 
   .carousel-caption h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .carousel-caption p {
-    font-size: 0.6rem !important; 
+    font-size: 0.55rem !important; 
     margin-top: 0;
   }
 
@@ -840,6 +844,11 @@ a:hover, a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .coming-soon-text {
+    width: 100%;
   }
 
   .coming-soon-heading {
@@ -862,6 +871,13 @@ a:hover, a:focus {
     max-width: 130px;
   }
 
-  
+  .coming-soon-img {
+    width: 100%;;
+    display: flex;
+  }
+
+  .coming-soon-img img {
+    width: 325px;
+  }
 }
 
